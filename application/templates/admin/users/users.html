@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock title %}
+
+
+{% block content %}
+<div class="users-list">
+    {% for user in users  %}
+        {% include "components/user.html" %}
+    {% endfor %}
+</div>
+
+
+{% endblock content %}

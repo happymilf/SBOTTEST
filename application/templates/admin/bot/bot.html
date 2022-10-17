@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{% endblock title %}
+
+
+
+{% block content %}
+<div class="bot-panel">
+<form method="post">
+    
+    
+        <div class="bot-message">
+            <div class="bot-label">
+                <h1>Greetings</h1>
+            </div>
+            <div class="bot-input">
+                <textarea name="greetings"  cols="30" rows="10">{{ greetings }}</textarea>
+            </div>
+        </div>
+        <div class="bot-message">
+            <div class="bot-label">
+                <h1>Promo text</h1>
+            </div>
+            <div class="bot-input">
+                <textarea name="promo" cols="30" rows="10">{{ promo }}</textarea>
+            </div>
+        </div>
+        <div class="bot-message">
+            <div class="bot-label">
+                <h1>Check</h1>
+            </div>
+            <div class="bot-input">
+                <textarea name="check"  cols="30" rows="10">{{ check }}</textarea>
+            </div>
+        </div>
+        <div class="bot-message">
+            <div class="bot-label">
+                <h1>Already</h1>
+            </div>
+            <div class="bot-input">
+                <textarea name="already"  cols="30" rows="10">{{ already }}</textarea>
+            </div>
+        </div>
+        <div class="bot-message">
+            <div class="bot-label">
+                <h1>No tokens</h1>
+            </div>
+            <div class="bot-input">
+                <textarea name="notokens"  cols="30" rows="10">{{ notokens }}</textarea>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="OK">
+        </div>
+       
+
+</form> 
+</div>
+
+
+{% endblock content %}
+

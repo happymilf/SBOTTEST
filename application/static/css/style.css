@@ -1,0 +1,149 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article{
+    height: 100%;
+    display: grid;
+    
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background-color: lightblue;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    gap: 15px;
+    font-size: 38;
+}
+
+
+.header-link{
+    text-decoration: none;
+    color: black
+}
+.header-link:hover{
+    text-shadow: 1px 1px 1px #000;
+    color: black
+}
+.header-text:hover{
+    text-shadow: 2px;
+}
+
+main{
+
+}
+
+
+footer{
+    height: 20px;
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+.promocode-add{
+   
+}
+.promocode-list{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    max-height: 70vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-auto-flow: row;
+}   
+.promocode-item{
+    border-top: 1px solid black;
+    display: inline-grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+
+
+}
+.promocode-id{
+    border-right: 1px solid black;
+    padding: 0px 5px 0px 5px;
+    width: 50px;
+}
+.promocode-name{
+    border-right: 1px solid black;
+    padding: 0px 5px 0px 5px;
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.promocode-status{
+    border-right: 1px solid black;
+    padding: 0px 5px 0px 5px;
+    width: 100px;
+}
+.promocode-counter{
+    border-right: 1px solid black;
+    padding: 0px 5px 0px 5px;
+    width: 100px;
+}
+
+
+.promocode-deactivate{
+    border-right: 1px solid black;
+    padding: 0px 5px 0px 5px;
+}
+
+.promocode-delete{
+    border-right: 1px solid black; 
+    padding: 0px 5px 0px 5px;
+}
+
+
+.users-list{
+    display: grid;
+    grid-auto-flow: row;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+.user-item{
+    border-top: 1px solid black;
+    display: inline-grid;
+    grid-auto-flow: column;
+    justify-content: stretch;
+    align-items: center;
+}
+.user-name{
+    border-right: 1px solid black;
+    width : 200px;
+}
+.user-status{
+    border-right: 1px solid black;
+    width : 200px;
+    
+    
+}
+.user-promocode{
+    border-right: 1px solid black;
+    width : 100px;
+}
+
+.bot-panel{
+
+}
+.bot-message{
+
+}
+.bot-label{
+
+}
+.bot-input{
+
+}

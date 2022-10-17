@@ -1,0 +1,18 @@
+<div class="promocode-item">
+    <div class="promocode-id">
+        <p><b>ID : {{promocode.id}}</b></p>
+    </div>
+    <div class="promocode-name">
+        <p><b>{{promocode.token}}</b></p>
+    </div>
+    <div class="promocode-status">
+        <p>{{promocode.is_active}}</p>
+    </div>
+    <div class="promocode-counter">
+        <p>Count: {{promocode.counter}}</p>
+    </div>
+
+    <div class="promocode-delete">
+       <p> <a href="{{url_for('delete_promo', promo_id=promocode.id)}}">Delete</a></p>
+    </div>
+</div>

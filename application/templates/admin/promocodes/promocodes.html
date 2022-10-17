@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+
+
+
+<div class="promocode-add">
+    <form method="POST">
+        <p>Add new promocode <input type="text" name="promocode"></p>
+        <p>Count <input type="text" name="count"></p>
+        <input type="submit" value="Add">
+    </form>
+<!--    <form method="POST">-->
+<!--        <p>Upload File <input type="file" name="file" id=""></p>-->
+<!--        <input type="submit" value="OK">-->
+<!--    </form>-->
+</div>
+<div class="promocode-list">
+   
+    {% for promocode in promocodes  %}
+        {% include "components/promocode.html" %}
+    {% endfor %}
+    
+</div>
+{% endblock content %}
